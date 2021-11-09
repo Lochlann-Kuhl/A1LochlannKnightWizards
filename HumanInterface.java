@@ -16,8 +16,6 @@ public interface HumanInterface {
   //change the health of a human, return false if invalid health
   public boolean setHealth(int h);
   //draw a human
-  public void draw(Pen p);
-  //move a human
   public void move(int x, int y);
   //get Y position of a human
   public int getYPos();
