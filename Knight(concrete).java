@@ -1,8 +1,6 @@
 public class Knight extends Human implements HumanInterface {
   // Setting the name of the horse
-  private String horseName() {
-
-  }
+  private String horseName;
   public void setHorse() {
 
   } 

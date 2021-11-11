@@ -11,4 +11,7 @@ public class Wizard extends Human implements HumanInterface {
   public boolean setMagicka (int m) {
     
   }
+  public boolean equals(Wizard w) {
+    
+  }
 }
