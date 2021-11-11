@@ -1,6 +1,19 @@
 // parent class for the different human types
-public abstract class Human {
-// All of the private varialbes
+public abstract class Human implements HumanInterface{
+// All of the protected variables
+  // Human's name
+  protected String name;
+  // Human's age
+  protected int age;
+  // Human's height
+  protected double height;
+  // Human's health
+  protected int health;
+  // Human's position, x axis
+  protected int xPos;
+  // Human's position, y axis
+  protected int yPos;
+// All of the private variables
   // Value of human, low height
   private double LOW_HEIGHT;
   // Value of human, high height
