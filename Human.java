@@ -10,9 +10,9 @@ public abstract class Human implements HumanInterface{
   // Human's health
   protected int health;
   // Human's position, x axis
-  protected int xPos;
+  protected int xPos = 0;
   // Human's position, y axis
-  protected int yPos;
+  protected int yPos = 0;
 // All of the private variables
   // Value of human, low height
   private double LOW_HEIGHT;
@@ -27,13 +27,14 @@ public abstract class Human implements HumanInterface{
   // Value of human, high health
   private int HIGH_HEALTH;
   // value of human, number of
-  private int NUM_HUMANS;
+  private int NUM_HUMANS = 1;
 // All of the public classes
-  public int getNumHumans() {
 
+  public int getNumHumans() {
+    return NUM_HUMANS;
   }
   public void setNumHumans() {
-
+    NUM_HUMANS += 1;
   }
   public String getAgeRules() {
 
@@ -44,13 +45,14 @@ public abstract class Human implements HumanInterface{
   public String getHealthRules() {
  
   }
-  public void move() {
-
+  public void move(int x, int y) {
+    xPos += x;
+    yPos += y;
   }
   public int getXPos() {
-
+    return xPos;
   }
   public int getYPos() {
-    
+    return yPos;
   }
 }
