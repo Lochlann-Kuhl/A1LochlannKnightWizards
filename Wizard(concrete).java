@@ -1,7 +1,5 @@
 public class Wizard extends Human implements HumanInterface {
-  private int magicka() {
-    
-  }
+  private int magicka = 0;
   public void castSpell() {
 
   }
@@ -13,5 +11,14 @@ public class Wizard extends Human implements HumanInterface {
   }
   public boolean equals(Wizard w) {
     
+  }
+  private int LOW_MAGICKA {
+
+  }
+  private int HIGH_MAGICKA {
+    
+  }
+  public String getMagickaRules() {
+
   }
 }
