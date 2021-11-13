@@ -12,13 +12,13 @@ public class Wizard extends Human implements HumanInterface {
   public boolean equals(Wizard w) {
     
   }
-  private int LOW_MAGICKA {
+  private static int LOW_MAGICKA {
 
   }
-  private int HIGH_MAGICKA {
+  private static int HIGH_MAGICKA {
     
   }
-  public String getMagickaRules() {
+  public static String getMagickaRules() {
 
   }
 }
