@@ -14,18 +14,18 @@ public abstract class Human implements HumanInterface{
   // Human's position, y axis
   protected int yPos = 0;
 // All of the private variables
-  // Value of human, low height
-  private double LOW_HEIGHT;
-  // Value of human, high height
-  private double HIGH_HEIGHT;
-  // Value of human, low age
-  private int LOW_AGE;
-  // Value of human, high age
-  private int HIGH_AGE;
-  // Value of human, low health
-  private int LOW_HEALTH;
-  // Value of human, high health
-  private int HIGH_HEALTH;
+  // Value of human, low height, inches
+  private double LOW_HEIGHT = 60;
+  // Value of human, high height, inches
+  private double HIGH_HEIGHT = 78;
+  // Value of human, low age, years
+  private int LOW_AGE = 18;
+  // Value of human, high age, years
+  private int HIGH_AGE = 90;
+  // Value of human, low health, hit points
+  private int LOW_HEALTH = 1;
+  // Value of human, high health, hit points
+  private int HIGH_HEALTH = 10;
   // value of human, number of
   private int NUM_HUMANS = 1;
 // All of the public classes
