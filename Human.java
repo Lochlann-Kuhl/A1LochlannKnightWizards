@@ -13,46 +13,79 @@ public abstract class Human implements HumanInterface{
   protected int xPos = 0;
   // Human's position, y axis
   protected int yPos = 0;
-// All of the private variables
-  // Value of human, low height
-  private double LOW_HEIGHT;
-  // Value of human, high height
-  private double HIGH_HEIGHT;
-  // Value of human, low age
-  private int LOW_AGE;
-  // Value of human, high age
-  private int HIGH_AGE;
-  // Value of human, low health
-  private int LOW_HEALTH;
-  // Value of human, high health
-  private int HIGH_HEALTH;
-  // value of human, number of
-  private int NUM_HUMANS = 1;
-// All of the public classes
+// All of the public instance methods
+  public Human() {
+  
+  }
+  public int getHealth() {
 
-  public int getNumHumans() {
+  }
+  public boolean setHealth() {
+
+  }
+  public String toString() {
+
+  }
+  public String getName() {
+
+  }
+  public void setName() {
+
+  }
+  public int getAge() {
+
+  }
+  public boolean setAge() {
+
+  }
+  public double getHeight() {
+
+  }
+  public boolean setHeight() {
+    
+  }
+// All of the private class variables
+  // Value of human, low height, inches
+  private static double LOW_HEIGHT = 60;
+  // Value of human, high height, inches
+  private static double HIGH_HEIGHT = 78;
+  // Value of human, low age, years
+  private static int LOW_AGE = 18;
+  // Value of human, high age, years
+  private static int HIGH_AGE = 90;
+  // Value of human, low health, hit points
+  private static int LOW_HEALTH = 1;
+  // Value of human, high health, hit points
+  private static int HIGH_HEALTH = 10;
+  // value of human, number of
+  private static int NUM_HUMANS = 1;
+// All of the public classes
+  public static int getNumHumans() {
     return NUM_HUMANS;
   }
-  public void setNumHumans() {
+  public static void setNumHumans() {
     NUM_HUMANS += 1;
   }
-  public String getAgeRules() {
-
+  public static String getAgeRules() {
+    System.out.println("Minimum age is " + LOW_AGE);
+    System.out.println("Maximum age is " + HIGH_AGE);
   } 
-  public String getHeightRules() {
-
+  public static String getHeightRules() {
+    System.out.println("Minimum height (in inches) is " + LOW_HEIGHT);
+    System.out.println("Maximum height (in inches) is " + HIGH_HEIGHT);
   }
-  public String getHealthRules() {
- 
+  public static String getHealthRules() {
+    System.out.println("Minimum health is " + LOW_HEALTH);
+    System.out.println("Maximum health is " + HIGH_HEALTH);
   }
-  public void move(int x, int y) {
+  public static void move(int x, int y) {
     xPos += x;
     yPos += y;
   }
-  public int getXPos() {
+  public static int getXPos() {
     return xPos;
   }
-  public int getYPos() {
+  public static int getYPos() {
     return yPos;
   }
 }
