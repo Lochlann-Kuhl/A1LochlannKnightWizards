@@ -1,6 +1,12 @@
 public class Knight extends Human implements HumanInterface {
   // Setting the name of the horse
   private String horseName;
+  public Knight() {
+
+  }
+  public String toString() {
+
+  }
   public void setHorse() {
 
   } 
@@ -10,5 +16,4 @@ public class Knight extends Human implements HumanInterface {
   public boolean equals(Knight k) {
 
   }
-  
 }

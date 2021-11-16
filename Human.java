@@ -13,6 +13,37 @@ public abstract class Human implements HumanInterface{
   protected int xPos = 0;
   // Human's position, y axis
   protected int yPos = 0;
+// All of the public instance methods
+  public Human() {
+  
+  }
+  public int getHealth() {
+
+  }
+  public boolean setHealth() {
+
+  }
+  public String toString() {
+
+  }
+  public String getName() {
+
+  }
+  public void setName() {
+
+  }
+  public int getAge() {
+
+  }
+  public boolean setAge() {
+
+  }
+  public double getHeight() {
+
+  }
+  public boolean setHeight() {
+    
+  }
 // All of the private class variables
   // Value of human, low height, inches
   private static double LOW_HEIGHT = 60;
@@ -29,7 +60,6 @@ public abstract class Human implements HumanInterface{
   // value of human, number of
   private static int NUM_HUMANS = 1;
 // All of the public classes
-
   public static int getNumHumans() {
     return NUM_HUMANS;
   }
@@ -37,13 +67,16 @@ public abstract class Human implements HumanInterface{
     NUM_HUMANS += 1;
   }
   public static String getAgeRules() {
-
+    System.out.println("Minimum age is " + LOW_AGE);
+    System.out.println("Maximum age is " + HIGH_AGE);
   } 
   public static String getHeightRules() {
-
+    System.out.println("Minimum height (in inches) is " + LOW_HEIGHT);
+    System.out.println("Maximum height (in inches) is " + HIGH_HEIGHT);
   }
   public static String getHealthRules() {
- 
+    System.out.println("Minimum health is " + LOW_HEALTH);
+    System.out.println("Maximum health is " + HIGH_HEALTH);
   }
   public static void move(int x, int y) {
     xPos += x;
