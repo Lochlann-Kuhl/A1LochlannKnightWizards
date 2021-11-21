@@ -15,10 +15,10 @@ public abstract class Human implements HumanInterface{
   protected int yPos = 0;
 // All of the public instance methods
   public Human() {
-  
+
   }
   public int getHealth() {
-
+    System.out.println("The human's health is at " + health);
   }
   public boolean setHealth() {
 
@@ -27,19 +27,19 @@ public abstract class Human implements HumanInterface{
 
   }
   public String getName() {
-
+    System.out.println("The human's name is " + name);
   }
   public void setName() {
 
   }
   public int getAge() {
-
+    System.out.println("The human's age is " + age);
   }
   public boolean setAge() {
-
+    
   }
   public double getHeight() {
-
+    System.out.println("The human's height is " + height);
   }
   public boolean setHeight() {
     
@@ -76,7 +76,7 @@ public abstract class Human implements HumanInterface{
   }
   public static String getHealthRules() {
     System.out.println("Minimum health is " + LOW_HEALTH);
-    System.out.println("Maximum health is " + HIGH_HEALTH);
+    System.out.println("Maximum health is " + HIGH_HEALTh);
   }
   public static void move(int x, int y) {
     xPos += x;
